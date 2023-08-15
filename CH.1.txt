@@ -1,0 +1,117 @@
+CH.1
+
+SW testing =! test execution
+
+testing: 1- static testing
+	 2- dynamic testing
+
+
+1- validation: SW is satisfying for the end user
+1- verification: SW meets the requirements of the client
+
+testing starts with component testing (to find as many failures and increase code coverage for component tests) and ends with acceptance
+testing (to confirm system works as expected and provide info to stakeholders about risk of releasing SW at a certain time)
+confirmation testing: occurs after debugging
+
+
+testing objectives =! testing principless
+
+objectives: 1- work product evaluation
+	    2- requirements fulfillment
+	    3- building confidence
+	    4- providing information to stakeholders
+	    5- preventing defects
+	    6- finding defects
+	    7- reduce risk
+	    8- compliance with law
+	    9- objectives may vary
+
+testing measures the quality doesn't improve it 
+
+QA: ensures that work is running under certain process (process oriented)
+QC: various activities including testing that ensures certain level of quality (product oriented)
+QM: QA + QC + Testing
+
+error/mistake --> defect/fault/bug --> failure
+
+
+False positive: when making a testing mistake that causes finding of an unreal defect
+False negative: when making a testing mistake that prevents the detection of an existing defect
+
+user story: as (who) I want (what) so that (why)
+
+
+testing principles: 1- testing shows the presence of defects not their absence
+		    2- exhaustive testing is impossible (testing everything is not feasible)
+		    3- early testing saves time and money (shift left)
+		    4- defect cluster together (pareto prenciple 80-20%)
+		    5- pesticide paradox (sometimes may be useful 'regression testing')
+		    6- context depending
+		    7- absence of errors is a fullacy
+
+
+test process: 1-Plan:		2-Design:		3-Execution:
+
+	      analysis		test cases		test report
+	      strategy		scripts			defect tracking
+	      plan		scenarios		defect analysis
+	      tools		enviroment		report
+
+test process is a set of test activities
+test activities are identified in the organization's test strategy (organaization oriented)
+
+test process is inflenced by contextual factors: 1-Software development lifecycle model and project methodologies being used 
+						 2-Test levels and test types being considered 
+						 3-Product and project risks
+						 4-Business domain
+						 5-Operational constraints: a-Budget and resources
+									    b-Timescales
+									    c-Complexity
+									    d-Contractual and regulatory requirements
+						 6-Organizational policies and practices
+						 7-Required internal and external standards
+
+Coverage Criteria = KPIs
+test basis must have measurable coverage criteria
+test basis: each requirement and device is an element of the test basis (at least 1 test case for each element)
+
+
+test process (Activities): 1-test planning (define test abjectives and the approaches to meet them)
+	      2-monitoring & control (on-going comaprison between actual progress against test monitoring metrics defined in test plan - 
+taking actions - supported by exit criteria or definition of done DOD -test progress is communicated to stakeholders through test progress
+report(summary report))
+exit criteria: a-Checking test results and logs against specified coverage criteria 
+	       b-Assessing the level of component or system quality based on test results and logs 
+	       c-Determining if more tests are needed (e.g., if tests originally intended to achieve a certain level of
+product risk coverage failed to do so, requiring additional tests to be written and executed)
+	      3-test analysis (what to test? (test conditions) - analyze test basis (Requirements specifications, Design, code, Risk analysis reports - can be used as objectives in test charter - 
+Capturing bi-directional traceability between the test basis, test conditions, and test cases)
+	      4-test design (How to test? - design & prioritize test cases - identify test data - design test enviroment)
+	      5-test implementation (is everything ready to run a test? -develop and priotirize test procedures - create test suites and	
+arrange them in test execution schedule - build test enviroment )
+	      6-test execution (run test suites - compare actual & expected results - report defects (bug report) - confirmation & 
+regression testing)
+	      7-test completion (collect date from test activities - occures at project milestones - check defect (bug) reports - create test 
+summary report - hand over the testware)
+
+(appear to be sequential but they overlap)
+high level test cases don't determine specific data to use
+test suite: is categorizing test cases according to their porpuse (their arrangement is called test procedures)
+
+
+	Activity:					work product:
+	
+       test planning					test plans
+      monitoring&control			test progress/summary repots
+       test analysis				test conditions - test charters
+       test design				test cases - test data
+     test implementation		test procedures - test suites - test execution schedule
+       test execution				status of test cases - defect report
+       test completion		     	test summary report - change requests
+
+
+
+confirmation bias: makes it difficult to beleive things that doesn't agree with our beleifs
+cognitive bias: due to lack of knowledge and misunderstanding
+
+
